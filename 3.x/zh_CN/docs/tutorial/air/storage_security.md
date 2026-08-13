@@ -25,12 +25,12 @@
 
 下载`build_chain.sh`脚本
 ``` shell
-curl -#LO https://github.com/FISCO-BCOS/FISCO-BCOS/releases/download/v3.11.0/build_chain.sh && chmod u+x build_chain.sh
+curl -#LO https://github.com/FISCO-BCOS/FISCO-BCOS/releases/download/v3.17.0/build_chain.sh && chmod u+x build_chain.sh
 ```
 
 ```eval_rst
 .. note::
-    - 如果因为网络问题导致长时间无法下载build_chain.sh脚本，请尝试 `curl -#LO https://gitee.com/FISCO-BCOS/FISCO-BCOS/releases/download/v3.11.0/build_chain.sh && chmod u+x build_chain.sh`
+    - 如果因为网络问题导致长时间无法下载build_chain.sh脚本，请尝试 `curl -#LO https://gitee.com/FISCO-BCOS/FISCO-BCOS/releases/download/v3.17.0/build_chain.sh && chmod u+x build_chain.sh`
 ```
 
 部署四个节点：
@@ -85,7 +85,7 @@ cipher_data_key=ed157f4588b86d61a2e1745efe71e6ea
 
 脚本自动打印出落盘加密需要的ini配置。
 此时得到节点的cipherDataKey：``` cipher_data_key=ed157f4588b86d61a2e1745efe71e6ea ```
-将得到的落盘加密的ini配置，写入节点配置文件（[config.ini](../tutorial/air/config.md)）中。
+将得到的落盘加密的ini配置，写入节点配置文件（[config.ini](./config.md)）中。
 
 ```shell
 vim nodes/127.0.0.1/node0/config.ini

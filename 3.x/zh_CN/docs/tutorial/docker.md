@@ -4,7 +4,7 @@
 
 ----
 
-[build_chain.sh](../manual/build_chain.md)脚本提供`-d`参数，支持使用docker方式部署区块链。本章将演示如何以docker方式搭建四节点的区块链，通过示例帮助用户熟悉docker搭建区块链的流程。
+[build_chain.sh](./air/build_chain.md)脚本提供`-d`参数，支持使用docker方式部署区块链。本章将演示如何以docker方式搭建四节点的区块链，通过示例帮助用户熟悉docker搭建区块链的流程。
 
 ```eval_rst
 .. note::
@@ -32,12 +32,12 @@ sudo yum install -y curl openssl openssl-devel
 cd ~ && mkdir -p fisco && cd fisco
 
 ## 下载脚本
-curl -#LO https://github.com/FISCO-BCOS/FISCO-BCOS/releases/download/v3.6.0/build_chain.sh && chmod u+x build_chain.sh
+curl -#LO https://github.com/FISCO-BCOS/FISCO-BCOS/releases/download/v3.17.0/build_chain.sh && chmod u+x build_chain.sh
 ```
 
 ```eval_rst
 .. note::
-    - 如果因为网络问题导致长时间无法下载build_chain.sh脚本，请尝试 `curl -#LO https://github.com/FISCO-BCOS/FISCO-BCOS/releases/download/v3.6.0/build_chain.sh && chmod u+x build_chain.sh`
+    - 如果因为网络问题导致长时间无法下载build_chain.sh脚本，请尝试 `curl -#LO https://github.com/FISCO-BCOS/FISCO-BCOS/releases/download/v3.17.0/build_chain.sh && chmod u+x build_chain.sh`
 ```
 
 ## 3. 搭建单群组4节点区块链
